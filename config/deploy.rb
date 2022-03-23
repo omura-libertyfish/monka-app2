@@ -4,7 +4,7 @@ lock "3.17.0"
 
 set :application, "monka-app2"
 
-set :repo_url, "git@github.com:～"
+set :repo_url, "git@github.com:omura-libertyfish/monka-app2.git"
 
 server "192.168.1.82", port: 2525, roles: [:app, :web, :db], primary: true
 
@@ -12,7 +12,7 @@ server "192.168.1.82", port: 2525, roles: [:app, :web, :db], primary: true
 
 # user
 
-set :user,            'deploys'
+set :user,            'a-kitahara'
 
 set :use_sudo,        false
 
@@ -66,7 +66,7 @@ set :pty,             true
 
 set :ssh_options,     {
 
-  user: 'deploy'
+  user: 'a-kitahara'
 
 }
 
